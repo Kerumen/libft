@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 14:29:01 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/01 18:33:48 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:57:23 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 int					ft_memcmp(const void *s1, const void *s2, size_t n)
 {

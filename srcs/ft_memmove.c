@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 15:50:48 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/26 16:09:37 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:57:57 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 void			*ft_memmove(void *s1, const void *s2, size_t n)
 {

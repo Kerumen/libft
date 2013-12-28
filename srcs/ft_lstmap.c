@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 16:42:09 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/30 15:02:01 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:54:32 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {

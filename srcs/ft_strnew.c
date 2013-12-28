@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:30:19 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/26 17:03:22 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:05:51 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 char		*ft_strnew(size_t size)
 {

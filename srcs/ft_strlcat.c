@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 14:40:21 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 15:34:10 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:03:17 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 size_t			ft_strlcat(char *dst, const char *src, size_t size)
 {

@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 17:22:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/01 18:30:19 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:08:43 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void		ft_tabsort(char **tab, int n)
 {

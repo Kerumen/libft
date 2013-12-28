@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 14:54:33 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 15:01:21 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:00:17 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

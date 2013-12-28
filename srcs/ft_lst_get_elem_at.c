@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/28 12:26:45 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 12:30:05 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:50:22 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 t_list				*ft_lst_get_elem_at(t_list *alst, unsigned int nbr)
 {

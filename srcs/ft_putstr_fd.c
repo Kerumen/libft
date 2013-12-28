@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 14:55:15 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 14:59:59 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:59:31 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void	ft_putstr_fd(char const *s, int fd)
 {

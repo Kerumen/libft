@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 10:01:22 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/28 12:42:23 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:05:00 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 int			ft_strncmp(const char *s1, const char *s2, size_t n)
 {

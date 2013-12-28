@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 14:30:21 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/27 18:42:27 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:38:26 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 
 # include <string.h>
-# include <stdlib.h>
-# include <unistd.h>
 
 typedef struct		s_list
 {

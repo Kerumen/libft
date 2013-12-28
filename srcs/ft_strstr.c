@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:02:23 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 15:36:28 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:07:22 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 char		*ft_strstr(const char *s1, const char *s2)
 {

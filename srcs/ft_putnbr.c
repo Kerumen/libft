@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 10:30:07 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/22 11:56:43 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:59:58 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void	ft_putnbr(int n)
 {

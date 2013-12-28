@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 11:26:28 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 11:36:49 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:03:46 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 char		*ft_strmap(char const *s, char (*f)(char))
 {

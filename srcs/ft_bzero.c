@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 11:07:54 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 15:09:05 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:49:53 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void		ft_bzero(void *s, size_t n)
 {

@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 15:59:24 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/07 11:17:05 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:02:55 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 char		*ft_strjoin(char const *s1, char const *s2)
 {

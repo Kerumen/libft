@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 16:14:21 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/23 15:36:05 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:06:25 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char		*ft_strrchr(const char *s, int c)
 {

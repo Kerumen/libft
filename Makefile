@@ -6,12 +6,12 @@
 #    By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:18:54 by ypringau          #+#    #+#              #
-#    Updated: 2013/12/28 14:27:31 by ypringau         ###   ########.fr        #
+#    Updated: 2013/12/28 15:13:55 by ypringau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang
-CFLAGS = -Wextra -Wall -Werror -I./includes
+CFLAGS = -Wall -Wextra -Werror -I./includes
 LDFLAGS =
 OBJDIR = objs
 LISTDIR = srcs
@@ -95,7 +95,7 @@ $(addprefix $(OBJDIR)/, %.o): %.c
 
 $(LIB):	$(OBJDIR) $(OBJ)
 	ar rc $(LIB) $(OBJ) $(LDFLAGS)
-	printf '\033[1;31m%s \033[1;35m%s \033[1;33m%s\n\033[0m' "Creating lib" "$(LIB)"
+	printf '\033[1;31m%s \033[1;35m%s \033[1;33m%s\n\033[0m' "Lib created" "$(LIB)"
 
 clean:
 	/bin/rm	-fr $(OBJDIR)
@@ -103,7 +103,7 @@ clean:
 
 fclean: clean
 	/bin/rm -fr $(LIB)
-	printf '\033[1;34m%s\n\033[0m' "Fclean project $(lIB)"
+	printf '\033[1;34m%s\n\033[0m' "Fclean project $(LIB)"
 
 re: fclean all
 

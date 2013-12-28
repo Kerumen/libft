@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 12:04:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/01 18:36:17 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:08:34 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 int			ft_test_char(char c)
 {

@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/30 15:51:03 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 12:22:03 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:06:40 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 char		*ft_strrev(const char *s)
 {

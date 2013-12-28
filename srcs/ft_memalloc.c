@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:36:14 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/01 18:32:31 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:55:40 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 void		*ft_memalloc(size_t size)
 {

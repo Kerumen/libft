@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:50:56 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 17:48:23 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:01:25 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 void	ft_strdel(char **as)
 {

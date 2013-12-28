@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 16:40:08 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 12:21:16 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:54:32 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 {

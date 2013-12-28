@@ -6,11 +6,9 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 10:00:25 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/28 12:34:40 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:01:09 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
 {

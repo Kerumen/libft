@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 11:38:35 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/26 16:05:41 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:56:09 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 void				*ft_memccpy(void *s1, const void *s2, int c, size_t n)
 {

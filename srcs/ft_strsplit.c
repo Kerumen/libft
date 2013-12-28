@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 15:39:53 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 14:07:33 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:06:56 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 static int	size_word(char *s, char c)
 {

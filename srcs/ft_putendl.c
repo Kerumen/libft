@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 12:28:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/21 11:06:53 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:00:15 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void	ft_putendl(char const *s)
 {

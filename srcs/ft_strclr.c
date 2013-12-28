@@ -6,11 +6,9 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 10:15:54 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 11:33:19 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:00:58 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_strclr(char *s)
 {

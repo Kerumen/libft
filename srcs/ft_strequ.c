@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 10:54:37 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 11:39:28 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:02:28 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 int			ft_strequ(const char *s1, const char *s2)
 {

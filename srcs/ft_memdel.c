@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 10:38:02 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 11:31:52 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:57:45 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
+#include <stdlib.h>
 
 void		ft_memdel(void **ap)
 {

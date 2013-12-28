@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 17:35:52 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/12 11:16:11 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:04:14 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 char		*ft_strncat(char *s1, const char *s2, size_t n)
 {

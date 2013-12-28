@@ -6,11 +6,11 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 17:22:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/10 14:48:17 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:55:20 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
 void		ft_lstsort(t_list **root)
 {

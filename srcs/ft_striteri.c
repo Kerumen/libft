@@ -6,11 +6,9 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 11:07:32 by ypringau          #+#    #+#             */
-/*   Updated: 2013/11/25 11:35:08 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 15:02:41 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

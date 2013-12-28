@@ -6,11 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/10 14:47:51 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/10 14:50:04 by ypringau         ###   ########.fr       */
+/*   Updated: 2013/12/28 14:55:31 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
+#include <stdlib.h>
 
 void		ft_lstswap(t_list *s1, t_list *s2)
 {
