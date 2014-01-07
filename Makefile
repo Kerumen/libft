@@ -83,7 +83,10 @@ SRC = $(DIRSRC)/ft_memset.c                 \
 	  $(DIRSRC)/ft_lstadd_end.c             \
 	  $(DIRSRC)/get_next_line.c             \
 	  $(DIRSRC)/ft_lstswap.c                \
-	  $(DIRSRC)/ft_realloc.c
+	  $(DIRSRC)/ft_realloc.c                \
+	  $(DIRSRC)/ft_dllstnew.c               \
+	  $(DIRSRC)/ft_dllstadd_end.c           \
+	  $(DIRSRC)/ft_dllstdelitem.c
 
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.c=.o))
 

@@ -17,10 +17,18 @@
 
 typedef struct		s_list
 {
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
+    void		*content;
+    size_t		content_size;
+    struct s_list	*next;
+}			t_list;
+
+typedef struct		s_dllist
+{
+    void		*content;
+    size_t		content_size;
+    struct s_dllist	*next;
+    struct s_dllist	*prev;
+}			t_dllist;
 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
@@ -88,5 +96,8 @@ void	ft_lstadd_end(t_list **alst, t_list *new);
 int		get_next_line(int const fd, char **line);
 void	ft_lstswap(t_list *s1, t_list *s2);
 void	*ft_realloc(void *ptr, size_t taille);
+t_dllist	*ft_dllstnew(void const *content, size_t content_size);
+void		ft_dllstadd_end(t_dllist **alst, t_dllist *new);
+void		ft_dllstdelitem(t_dllist **item);
 
 #endif
