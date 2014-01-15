@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 15:39:53 by ypringau          #+#    #+#             */
-/*   Updated: 2014/01/11 12:34:47 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/01/15 10:53:48 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void		put_word_in_tab(int nb_w, char c, char **tab, char *s)
 	}
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**tab;
 	int		nb_w;

@@ -6,7 +6,7 @@
 #    By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:18:54 by ypringau          #+#    #+#              #
-#    Updated: 2014/01/15 10:47:58 by ypringau         ###   ########.fr        #
+#    Updated: 2014/01/15 11:38:05 by ypringau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRC = $(DIRSRC)/ft_memset.c                 \
 	  $(DIRSRC)/ft_strncat.c                \
 	  $(DIRSRC)/ft_strlcat.c                \
 	  $(DIRSRC)/ft_atoi.c                   \
+	  $(DIRSRC)/ft_atof.c                   \
 	  $(DIRSRC)/ft_strrchr.c                \
 	  $(DIRSRC)/ft_strstr.c                 \
 	  $(DIRSRC)/ft_strnstr.c                \
