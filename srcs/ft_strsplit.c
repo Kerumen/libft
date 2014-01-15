@@ -6,17 +6,17 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 15:39:53 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:06:56 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/01/11 12:34:47 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stdlib.h>
 
-static int	size_word(char *s, char c)
+static int		size_word(char *s, char c)
 {
-	int	i;
-	int	res;
+	int		i;
+	int		res;
 
 	res = 0;
 	i = 0;
@@ -28,11 +28,11 @@ static int	size_word(char *s, char c)
 	return (res);
 }
 
-static void	put_word_in_tab(int nb_w, char c, char **tab, char *s)
+static void		put_word_in_tab(int nb_w, char c, char **tab, char *s)
 {
-	int	i;
-	int	j;
-	int	size;
+	int		i;
+	int		j;
+	int		size;
 
 	size = 0;
 	i = 0;
@@ -52,11 +52,11 @@ static void	put_word_in_tab(int nb_w, char c, char **tab, char *s)
 	}
 }
 
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	char	**tab;
-	int	nb_w;
-	int	i;
+	int		nb_w;
+	int		i;
 
 	if (s == NULL)
 		return (NULL);

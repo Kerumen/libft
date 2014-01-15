@@ -6,12 +6,12 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/02 11:28:41 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/07 17:50:58 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/01/11 12:31:44 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE
-# define GET_NEXT_LINE
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 # define BUFF_SIZE 32
 
 # include <libft.h>

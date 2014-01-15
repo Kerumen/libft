@@ -6,17 +6,17 @@
 #    By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:18:54 by ypringau          #+#    #+#              #
-#    Updated: 2013/12/28 15:13:55 by ypringau         ###   ########.fr        #
+#    Updated: 2014/01/15 10:47:58 by ypringau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang
 CFLAGS = -Wall -Wextra -Werror -I./includes
 LDFLAGS =
-OBJDIR = objs
+OBJDIR = .objs
 LISTDIR = srcs
 DIRSRC = srcs
-LIB = libft.a
+NAME = libft.a
 SRC = $(DIRSRC)/ft_memset.c                 \
 	  $(DIRSRC)/ft_bzero.c                  \
 	  $(DIRSRC)/ft_memcpy.c                 \
@@ -96,21 +96,21 @@ $(addprefix $(OBJDIR)/, %.o): %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 	printf '\033[0;32mBuilding C Object $@\n\033[0m' "Building C Object $@"
 
-$(LIB):	$(OBJDIR) $(OBJ)
-	ar rc $(LIB) $(OBJ) $(LDFLAGS)
-	printf '\033[1;31m%s \033[1;35m%s \033[1;33m%s\n\033[0m' "Lib created" "$(LIB)"
+$(NAME): $(OBJDIR) $(OBJ)
+	ar rc $(NAME) $(OBJ) $(LDFLAGS)
+	printf '\033[1;31m%s \033[1;35m%s \033[1;33m%s\n\033[0m' "Lib created" "$(NAME)"
 
 clean:
 	/bin/rm	-fr $(OBJDIR)
-	printf '\033[1;34m%s\n\033[0m' "Clean project $(LIB)"
+	printf '\033[1;34m%s\n\033[0m' "Clean project $(NAME)"
 
 fclean: clean
-	/bin/rm -fr $(LIB)
-	printf '\033[1;34m%s\n\033[0m' "Fclean project $(LIB)"
+	/bin/rm -fr $(NAME)
+	printf '\033[1;34m%s\n\033[0m' "Fclean project $(NAME)"
 
 re: fclean all
 
-all: $(LIB)
+all: $(NAME)
 
 $(OBJDIR):
 	/bin/mkdir $(OBJDIR);			\
