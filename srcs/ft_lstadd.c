@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 16:54:03 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:54:32 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:32:36 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,3 @@ void		ft_lstadd(t_list **alst, t_list *new)
 	new->next = *alst;
 	*alst = new;
 }
-

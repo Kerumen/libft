@@ -3,34 +3,51 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypringau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/21 10:41:43 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:26:20 by ypringau         ###   ########.fr       */
+/*   Created: 2015/01/27 09:40:18 by ypringau          #+#    #+#             */
+/*   Updated: 2015/01/27 09:40:20 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_atoi(const char *str)
-{
-	int	total;
-	int	signe;
-	int	i;
+#include "libft.h"
 
-	total = 0;
-	i = 0;
-	signe = 1;
-	while (str[i] < 33)
-	{
-		i++;
-	}
-	if (str[i] == '-' || str[i] == '+')
-	{
-		signe = (str[i++] == '+' ? 1 : -1);
-	}
-	while (str[i] != '\0' && (str[i] > 47 && str[i] < 58))
-	{
-		total = total * 10 + str[i++] - '0';
-	}
-	return (signe * total);
+static const char	*ft_remove(const char *str)
+{
+	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\v'
+			|| *str == '\f' || *str == '\r')
+		str++;
+	return (str);
 }
 
+static void			ft_assign(int *i, int *res, int *sign)
+{
+	*i = 0;
+	*res = 0;
+	*sign = 1;
+}
+
+int					ft_atoi(const char *str)
+{
+	int		res;
+	int		sign;
+	int		i;
+
+	ft_assign(&i, &res, &sign);
+	if (str == NULL)
+		return (0);
+	str = ft_remove(str);
+	if (str[i] == '-' || str[i] == '+')
+	{
+		sign = (str[i] == '-') ? -1 : 1;
+		i++;
+	}
+	while (str[i] != '\0')
+	{
+		if (ft_isdigit(str[i]) == 0)
+			return (res * sign);
+		res = res * 10 + str[i] - '0';
+		i++;
+	}
+	return (sign * res);
+}

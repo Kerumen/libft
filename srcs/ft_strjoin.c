@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 15:59:24 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:02:55 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:34:40 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ char		*ft_strjoin(char const *s1, char const *s2)
 	ft_strcat(res, s2);
 	return (res);
 }
-

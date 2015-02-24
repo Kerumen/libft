@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 10:54:37 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:05:20 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:36:15 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,21 @@ int			ft_strnequ(const char *s1, const char *s2, size_t n)
 
 	if (s1 && s2)
 	{
-	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)
-		i++;
-	if (ft_strlen(s1) < n)
-	{
-		if (i == ft_strlen(s1))
-			return (1);
-	}
-	else
-	{
-		if (i == n)
-			return (1);
-	}
-	return (0);
-	}
-	else
-	{
+		i = 0;
+		while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)
+			i++;
+		if (ft_strlen(s1) < n)
+		{
+			if (i == ft_strlen(s1))
+				return (1);
+		}
+		else
+		{
+			if (i == n)
+				return (1);
+		}
 		return (0);
 	}
+	else
+		return (0);
 }

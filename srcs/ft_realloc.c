@@ -6,22 +6,22 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/26 20:13:20 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:59:25 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/24 16:16:58 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stdlib.h>
 
-void		*ft_realloc(void *ptr, size_t taille)
+void		*ft_realloc(void *ptr, size_t size)
 {
 	void	*new_ptr;
 
 	if (ptr == NULL)
-		return (malloc(taille));
-	if (taille == 0)
+		return (malloc(size));
+	if (!size)
 		return (ptr);
-	new_ptr = malloc(taille);
-	ft_memcpy(new_ptr, ptr, taille);
+	new_ptr = malloc(size);
+	ft_memcpy(new_ptr, ptr, size);
 	return (new_ptr);
 }

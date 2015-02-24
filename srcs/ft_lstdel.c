@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 16:40:08 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:54:32 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:32:45 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 	}
 	*alst = NULL;
 }
-

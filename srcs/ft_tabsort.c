@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 17:22:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:08:43 by ypringau         ###   ########.fr       */
+/*   Updated: 2015/01/26 16:57:48 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void		ft_tabsort(char **tab, int n)
 			{
 				tmp = tab[i];
 				tab[i] = tab[i + 1];
-				tab [i + 1] = tmp;
+				tab[i + 1] = tmp;
 				loop = 1;
 			}
 			i++;

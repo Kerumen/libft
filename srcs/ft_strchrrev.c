@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atof.h                                          :+:      :+:    :+:   */
+/*   ft_strchrrev.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypringau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/01/15 11:38:41 by ypringau          #+#    #+#             */
-/*   Updated: 2014/01/15 11:40:49 by ypringau         ###   ########.fr       */
+/*   Created: 2015/02/04 10:23:33 by ypringau          #+#    #+#             */
+/*   Updated: 2015/02/24 09:39:01 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ATOF_H
-# define FT_ATOF_H
+#include <string.h>
+#include "libft.h"
 
-typedef struct	s_atof
+char		*ft_strchrrev(const char *s, int c)
 {
-	double	integer_part;
-	double	fraction_part;
-	int		divisor;
-	int		sign;
-	int		fraction;
-}				t_atof;
+	char	ch;
+	int		i;
 
-#endif
+	if (!s)
+		return (NULL);
+	ch = (char)c;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == ch)
+			return (ft_strsub(s, 0, i));
+		i++;
+	}
+	return (NULL);
+}

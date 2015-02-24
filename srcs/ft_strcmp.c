@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypringau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/21 10:00:25 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:01:09 by ypringau         ###   ########.fr       */
+/*   Created: 2015/01/27 09:44:33 by ypringau          #+#    #+#             */
+/*   Updated: 2015/01/27 09:50:58 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int		ft_strcmp(const char *s1, const char *s2)
 {
-	int	i;
+	int		i;
 
 	i = 0;
-	while (s1[i] == s2[i] && s1[i] != '\0')
+	if (ft_strlen(s1) != ft_strlen(s2))
+		return (1);
+	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
 		i++;
-	if (s1[i] > s2[i] || s1[i] < s2[i])
-		return (s1[i] - s2[i]);
-	else
-		return (0);
+	return (s1[i] - s2[i]);
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_dllstdelitem.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: prenvois <prenvois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/27 11:23:58 by ypringau         #+#    #+#              */
-/*   Updated: 2014/01/11 12:32:56 by ypringau         ###   ########.fr       */
+/*   Created: 2014/03/25 19:32:06 by prenvois          #+#    #+#             */
+/*   Updated: 2014/03/25 19:32:08 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,3 @@ void	ft_dllstdelitem(t_dllist **item)
 	}
 	free(tmp);
 }
-

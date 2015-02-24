@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 11:26:28 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:03:46 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:35:19 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char		*ft_strmap(char const *s, char (*f)(char))
 	if (s && f)
 	{
 		i = 0;
-		str = (char *) malloc(sizeof(char) * (ft_strlen(s) + 1));
+		str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 		if (str)
 		{
 			while (s[i] != '\0')

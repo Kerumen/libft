@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_dllstgetitemat.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypringau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/22 10:36:14 by ypringau          #+#    #+#             */
-/*   Updated: 2014/03/25 19:33:33 by prenvois         ###   ########.fr       */
+/*   Created: 2014/02/08 18:32:34 by ypringau          #+#    #+#             */
+/*   Updated: 2014/02/09 15:55:16 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-#include <stdlib.h>
+#include "libft.h"
 
-void		*ft_memalloc(size_t size)
+t_dllist	*ft_dllstgetitemat(t_dllist *alst, unsigned int nbr)
 {
-	void	*str;
+	unsigned int		i;
+	t_dllist			*list;
 
-	str = (void*)malloc(size * sizeof(void));
-	if (str == NULL)
+	i = 1;
+	list = alst;
+	while (list != NULL && i < nbr)
+	{
+		list = list->next;
+		i++;
+	}
+	if (list == NULL)
 		return (NULL);
-	ft_bzero(str, size);
-	return (str);
+	else
+		return (list);
 }

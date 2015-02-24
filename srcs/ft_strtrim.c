@@ -6,14 +6,14 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/22 12:04:39 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:08:34 by ypringau         ###   ########.fr       */
+/*   Updated: 2015/01/27 09:53:37 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stdlib.h>
 
-int			ft_test_char(char c)
+static int			ft_test_char(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n')
 	{
@@ -22,7 +22,7 @@ int			ft_test_char(char c)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s)
+char				*ft_strtrim(char const *s)
 {
 	int		i;
 	char	*str;
@@ -32,7 +32,7 @@ char		*ft_strtrim(char const *s)
 	{
 		j = 0;
 		i = 0;
-		str = (char *) malloc(sizeof(char) * (ft_strlen(s)));
+		str = (char *)malloc(sizeof(char) * (ft_strlen(s)));
 		while (ft_test_char(s[i]) == 1)
 			i++;
 		str = ft_strsub(s, i, ft_strlen(s) - i);
@@ -50,4 +50,3 @@ char		*ft_strtrim(char const *s)
 	}
 	return (NULL);
 }
-

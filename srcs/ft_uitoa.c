@@ -1,37 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dllstnew.c                                      :+:      :+:    :+:   */
+/*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prenvois <prenvois@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/03/25 19:32:22 by prenvois          #+#    #+#             */
-/*   Updated: 2014/03/25 19:32:30 by prenvois         ###   ########.fr       */
+/*   Created: 2013/12/17 21:04:08 by prenvois          #+#    #+#             */
+/*   Updated: 2014/02/04 14:45:13 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 #include <stdlib.h>
 
-t_dllist		*ft_dllstnew(void const *content, size_t content_size)
+static char			*putnbr_to_str(int len, unsigned int n)
 {
-	t_dllist	*root;
+	char			*str;
 
-	root = (t_dllist*)malloc(sizeof(t_dllist));
-	if (!root)
+	if (!(str = (char*)malloc(sizeof(*str) * (size_t)(len + 1))))
 		return (NULL);
-	root->next = NULL;
-	root->prev = NULL;
-	root->content = NULL;
-	root->content_size = 0;
-	if (content)
+	str[len--] = '\0';
+	while (n)
 	{
-		root->content = malloc(content_size);
-		if (root->content)
-		{
-			ft_memcpy(root->content, content, content_size);
-			root->content_size = content_size;
-		}
+		str[len--] = n % 10 + '0';
+		n /= 10;
 	}
-	return (root);
+	return (str);
+}
+
+char				*ft_uitoa(unsigned int n)
+{
+	int				len;
+	unsigned int	tmp;
+
+	len = 0;
+	tmp = n;
+	if (!n)
+		return ("0");
+	while (tmp)
+	{
+		len++;
+		tmp /= 10;
+	}
+	return (putnbr_to_str(len, n));
 }

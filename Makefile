@@ -6,7 +6,7 @@
 #    By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/20 11:18:54 by ypringau          #+#    #+#              #
-#    Updated: 2014/01/15 11:38:05 by ypringau         ###   ########.fr        #
+#    Updated: 2015/02/24 09:52:13 by ypringau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRC = $(DIRSRC)/ft_memset.c                 \
 	  $(DIRSRC)/ft_atoi.c                   \
 	  $(DIRSRC)/ft_atof.c                   \
 	  $(DIRSRC)/ft_strrchr.c                \
+	  $(DIRSRC)/ft_strchrrev.c              \
 	  $(DIRSRC)/ft_strstr.c                 \
 	  $(DIRSRC)/ft_strnstr.c                \
 	  $(DIRSRC)/ft_strcmp.c                 \
@@ -87,11 +88,16 @@ SRC = $(DIRSRC)/ft_memset.c                 \
 	  $(DIRSRC)/ft_realloc.c                \
 	  $(DIRSRC)/ft_dllstnew.c               \
 	  $(DIRSRC)/ft_dllstadd_end.c           \
-	  $(DIRSRC)/ft_dllstdelitem.c
-
+	  $(DIRSRC)/ft_dllstadd.c               \
+	  $(DIRSRC)/ft_dllstgetitemat.c         \
+	  $(DIRSRC)/ft_dllstdelitem.c           \
+	  $(DIRSRC)/ft_word_count.c             \
+	  $(DIRSRC)/ft_uitoa.c                  \
+	  $(DIRSRC)/ft_uitooa.c                 \
+	  $(DIRSRC)/ft_uitoxa.c                 \
+	  $(DIRSRC)/ft_luitoxa.c                \
+	  $(DIRSRC)/ft_printf_fd.c
 OBJ = $(addprefix $(OBJDIR)/, $(SRC:.c=.o))
-
-.SILENT:
 
 $(addprefix $(OBJDIR)/, %.o): %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
@@ -102,11 +108,12 @@ $(NAME): $(OBJDIR) $(OBJ)
 	printf '\033[1;31m%s \033[1;35m%s \033[1;33m%s\n\033[0m' "Lib created" "$(NAME)"
 
 clean:
-	/bin/rm	-fr $(OBJDIR)
+	/bin/rm -rf $(OBJDIR)
 	printf '\033[1;34m%s\n\033[0m' "Clean project $(NAME)"
 
-fclean: clean
-	/bin/rm -fr $(NAME)
+fclean:
+	/bin/rm -rf $(OBJDIR)
+	/bin/rm -rf $(NAME)
 	printf '\033[1;34m%s\n\033[0m' "Fclean project $(NAME)"
 
 re: fclean all
@@ -114,11 +121,11 @@ re: fclean all
 all: $(NAME)
 
 $(OBJDIR):
-	/bin/mkdir $(OBJDIR);			\
-	for DIR in $(LISTDIR);			\
-	do								\
-		/bin/mkdir $(OBJDIR)/$$DIR;	\
-	done							\
+	/bin/mkdir $(OBJDIR);           \
+	for DIR in $(LISTDIR);          \
+	do                              \
+		/bin/mkdir $(OBJDIR)/$$DIR; \
+	done
 
 .PHONY: clean fclean re
-
+.SILENT:

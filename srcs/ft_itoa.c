@@ -3,91 +3,91 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypringau <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/22 16:14:27 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:49:40 by ypringau         ###   ########.fr       */
+/*   Created: 2015/01/26 17:53:10 by ypringau          #+#    #+#             */
+/*   Updated: 2015/01/26 17:53:12 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char		*putnbr_to_str(char *str, int len, int n, int neg)
+static void	ft_reverse(char *str, int len)
 {
-	str[len--] = '\0';
-	if (neg)
-		str[0] = '-';
+	int		j;
+	int		i;
+	char	tmp;
+
+	i = 0;
+	j = len - 1;
+	while (i < j)
+	{
+		tmp = str[i];
+		str[i] = str[j];
+		str[j] = tmp;
+		i++;
+		j--;
+	}
+}
+
+static char	*ft_itoa_it(int n, char *str)
+{
+	int		sign;
+	int		i;
+
+	sign = (n < 0) ? 1 : 0;
+	i = 0;
 	if (n == 0)
 	{
-		str[0] = '0';
+		str[i++] = '0';
 	}
-	while (n)
+	else if (n < 0)
 	{
-		str[len--] = n % 10 + '0';
-		n = n / 10;
+		str[i++] = '-';
+		n = -n;
 	}
+	while (n > 0)
+	{
+		str[i++] = (n % 10) + '0';
+		n /= 10;
+	}
+	str[i] = '\0';
+	ft_reverse(str + sign, i - sign);
 	return (str);
 }
 
-char		*max_neg(void)
+static int	ft_getlen(int nb)
 {
-	char	*str;
-	char	*str2;
-	int		i;
+	int		cpt;
 
-	str2 = "-2147483648";
-	i = 0;
-	str = (char*)malloc(sizeof(char) * 11);
-	if (str)
+	cpt = (nb == 0) ? 1 : 0;
+	if (nb < 0)
 	{
-		while (i < 11)
-		{
-			str[i] = str2[i];
-			i++;
-		}
-		str[i] = '\0';
-		return (str);
+		nb = -nb;
+		cpt++;
 	}
-	else
-		return (NULL);
-}
-
-int			n_is_neg(int *n, int *len)
-{
-	if (*n < 0)
+	while (nb != 0)
 	{
-		(*len)++;
-		*n = *n * -1;
-		return (1);
+		nb = nb / 10;
+		cpt++;
 	}
-	else
-		return (0);
+	return (cpt);
 }
 
 char		*ft_itoa(int n)
 {
 	char	*str;
 	int		len;
-	int		neg;
-	int		tmp;
 
-	tmp = n;
-	len = 0;
 	if (n == -2147483648)
-		return (max_neg());
-	neg = n_is_neg(&n, &len);
-	if (tmp == 0)
-		len++;
-	while (tmp)
 	{
-		len++;
-		tmp = tmp / 10;
+		return (ft_strdup("-2147483648"));
 	}
-	str = (char*)malloc(sizeof(char) * (len + 1));
-	if (str)
-		str = putnbr_to_str(str, len, n, neg);
-	else
+	len = ft_getlen(n);
+	str = ft_strnew(len);
+	if (!str)
+	{
 		return (NULL);
-	return (str);
+	}
+	return (ft_itoa_it(n, str));
 }

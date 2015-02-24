@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:02:11 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 15:06:24 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:36:43 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 	size_t	y;
 
 	if (ft_strlen(s2) == 0)
-		return ((char *) s1);
+		return ((char *)s1);
 	i = 0;
 	while (s1[i] != '\0' && i < n)
 	{
@@ -31,7 +31,7 @@ char		*ft_strnstr(const char *s1, const char *s2, size_t n)
 			}
 			if (s2[y] == '\0')
 			{
-				return (&(((char *) s1)[i]));
+				return (&(((char *)s1)[i]));
 			}
 		}
 		i++;

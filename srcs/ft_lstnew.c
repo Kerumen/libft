@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/25 14:51:25 by ypringau          #+#    #+#             */
-/*   Updated: 2013/12/28 14:55:12 by ypringau         ###   ########.fr       */
+/*   Updated: 2014/03/25 19:33:01 by prenvois         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,3 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 	list->next = NULL;
 	return (list);
 }
-
