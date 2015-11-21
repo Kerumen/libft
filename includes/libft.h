@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 14:30:21 by ypringau          #+#    #+#             */
-/*   Updated: 2015/02/24 09:55:29 by ypringau         ###   ########.fr       */
+/*   Updated: 2015/11/21 12:35:41 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ typedef struct		s_read
 
 typedef struct		s_atof
 {
-	double			integer_part;
-	double			fraction_part;
+	double			ipart;
+	double			fpart;
 	int				divisor;
 	int				sign;
 	int				fraction;

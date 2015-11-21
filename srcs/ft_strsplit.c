@@ -6,7 +6,7 @@
 /*   By: ypringau <ypringau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/23 15:39:53 by ypringau          #+#    #+#             */
-/*   Updated: 2014/03/25 19:37:09 by prenvois         ###   ########.fr       */
+/*   Updated: 2015/11/21 12:29:18 by ypringau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char			**ft_strsplit(char const *s, char c)
 	if (tab)
 	{
 		put_word_in_tab(nb_w, c, tab, (char*)s);
-		tab[nb_w] = '\0';
+		tab[nb_w] = "\0";
 	}
 	else
 		return (NULL);
